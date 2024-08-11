@@ -1,5 +1,5 @@
 import React from 'react';
-import Team from './D1hw11';
+import Team from './D1cw33';
 function World(){
     return (
         <div>
@@ -10,7 +10,7 @@ function World(){
 }
 export default World;
 
-//File Name:D1hw11:
+//File Name:D1cw33:
 import React from 'react';
 function Team(){
     return(
