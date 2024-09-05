@@ -1,0 +1,268 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://files.123freevectors.com/wp-content/original/131382-abstract-grey-and-white-polygon-pattern-background-illustration.jpg");
+    color: #333;
+    height: 100%;
+}
+ 
+html {
+    height: 100%;
+}
+
+.r-home-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.r-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.r-sidebar-logo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.r-sidebar-nav a {
+    color: white;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.r-sidebar-nav a:hover {
+    color: #4CAF50;
+}
+
+
+.r-main-content {
+    margin-left: 220px;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.r-main-image-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.r-main-image {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.r-main-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.r-features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.r-feature-item {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.r-feature-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 1);
+}
+
+
+.r-feature-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: filter 0.5s ease;
+}
+.r-feature-image1 {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: filter 0.5s ease;
+}
+
+.r-feature-item:hover .r-feature-image {
+    filter: brightness(1.2) contrast(1.2) hue-rotate(10deg);
+    box-shadow: 0 0 15px rgba(144, 238, 144, 0.6); 
+}
+
+
+.r-feature-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.r-feature-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(144, 238, 144, 0.8);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.r-feature-item:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.r-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+.r-header-logo {
+    font-size: 1.5em;
+}
+
+.r-header-nav .r-nav-button {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.r-header-nav .r-nav-button:hover {
+    background-color: #4CAF50;
+}
+
+.r-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+}
+
+.r-footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.r-footer a:hover {
+    text-decoration: underline;
+}
+
+
+.r-schedule-meeting {
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.r-schedule-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.r-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.r-form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.r-input, .r-select, .r-calendar-container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.r-calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.r-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.r-button:hover {
+    background-color: #555;
+}
+
+
+.r-confirmation-dialog {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #4CAF50;
+    background-color: #e7f5e4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.r-confirmation-dialog h3 {
+    color: #4CAF50;
+}
